@@ -1,0 +1,10 @@
+vnet_name                   = "vcosqui-kafka-vnet"
+subnet_name                 = "vcosqui-kafka-subnet-docker"
+container_group_name_prefix = "apicurio-schema-registry"
+container_name_prefix       = "apicurio-schema-registry"
+image                       = "apicurio/apicurio-registry-mem:2.4.2.Final"
+port                        = 8080
+cpu_cores                   = 1
+memory_in_gb                = 1
+restart_policy              = "Always"
+subnet_addres_prefix        = "10.1.1.0/24"
